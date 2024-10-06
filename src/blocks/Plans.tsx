@@ -1,7 +1,16 @@
+import { useEffect } from "react";
 import PlansBox from "../component/PlansBox";
 import { Checkbox } from "antd";
 
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 export const Plans = () => {
+
+ useEffect(() => {
+    Aos.init({duration: 1500});
+  }, [])
+
+
   return (
     <div id="plan" className="p-4 md:p-8 lg:p-10">
       <p className="text-4xl font-bold text-white md:text-5xl lg:text-6xl">
@@ -40,7 +49,7 @@ export const Plans = () => {
         </Checkbox>
       </div>
     </div>
-      <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div data-aos='fade-up' className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         <PlansBox />
         <PlansBox />
         <PlansBox />

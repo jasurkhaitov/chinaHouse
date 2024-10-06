@@ -3,11 +3,19 @@ import { ButtonWithIcon } from "../component/ui/ButtonWithIcon";
 import InputMask from "react-input-mask";
 import Swipper from "./Swipper";
 
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
+
+
 export const Banner = () => {
+  useEffect(() => {
+     Aos.init({duration: 1500});
+   }, [])
   return (
     <div className="xl:w-[1200px] w-[95%] m-auto relative z-10 pb-[100px] sm:pb-[150px]">
       <div className="mx-auto text-center lgx:text-start flex lgx:flex-row flex-col gap-10 lgx:gap-0 w-11/12 justify-between pt-20 sm:pt-28">
-        <div className="w-full m-auto max-w-[32rem]">
+        <div data-aos='fade-right' className="w-full m-auto max-w-[32rem]">
           <p className="text-3xl sm:text-5xl font-bold text-white">YANGI O'ZBEKISTON</p>
           <p className="mb-4 sm:mb-8 mt-2 text-lg sm:text-2xl text-white">
             Комплекс премиум-класса
@@ -24,7 +32,7 @@ export const Banner = () => {
           />
         </div>
 
-        <div className="h-full max-h-96 w-full m-auto max-w-[25rem] rounded-2xl bg-bgCard p-7">
+        <div data-aos='fade-left' className="h-full max-h-96 w-full m-auto max-w-[25rem] rounded-2xl bg-bgCard p-7">
           <p className="text-center text-2xl sm:text-3xl font-medium uppercase text-neutral-700">
             Консультация
           </p>

@@ -11,8 +11,6 @@ import { ModalForm } from "./component/Modal";
 
 function App() {
 
-  document.querySelector('body').scrollIntoView({ behavior: 'smooth' })
-
   return (
     <div>
       <Header />

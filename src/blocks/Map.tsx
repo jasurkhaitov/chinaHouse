@@ -1,6 +1,15 @@
 import { LocationPin, PhoneCall } from "../assets/icons";
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 
 export const Map = () => {
+
+ useEffect(() => {
+    Aos.init({duration: 1500});
+  }, [])
+
+
   return (
     <div id="contact">
     <div className="relative w-[98%] m-auto xl:w-[1200px] z-10 my-5 pb-20">
@@ -17,7 +26,7 @@ export const Map = () => {
 
       <div className="hidden sm:flex flex-col p-10 relative z-10">
         <div className="text-4xl font-bold text-neutral-700">КОНТАКТЫ</div>
-        <div className="ml-auto rounded-md bg-white p-6 pb-20">
+        <div data-aos='fade-left' className="ml-auto rounded-md bg-white p-6 pb-20">
           <div className="text-4xl font-bold text-neutral-700">КОНТАКТЫ</div>
           <div className="pb-5 text-sm">Наши контакты для связи с нами</div>
           <div className="mb-4 flex items-center">
@@ -42,7 +51,7 @@ export const Map = () => {
       </div>
     </div>
 
-    <div className="flex sm:hidden flex-col w-[300px] m-auto">
+    <div data-aos='fade-left' className="flex sm:hidden flex-col w-[300px] m-auto">
         <div className="ml-auto rounded-md bg-white p-3">
           <div className="text-4xl font-bold text-neutral-700">КОНТАКТЫ</div>
           <div className="pb-5 text-sm">Наши контакты для связи с нами</div>

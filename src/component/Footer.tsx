@@ -26,7 +26,7 @@ export const Footer = () => {
         </div>
         </div>
 
-        <div className="ml-auto flex items-start gap-2">
+        <div className="ml-0 sm:ml-auto flex items-start gap-2">
           <a className="rounded-md bg-red-400 p-2" href="#">
             <FaTelegram size={25} className="text-white" />
           </a>
