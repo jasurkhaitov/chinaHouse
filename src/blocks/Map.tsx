@@ -9,11 +9,12 @@ export const Map = () => {
     Aos.init({ duration: 1500 });
   }, [])
 
+
   return (
     <div id="contact">
       <div className="relative w-[98%] m-auto xl:w-[1200px] z-10 my-5 pb-10">
         <div className="h-[500px] w-full">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.4514775666526!2d69.22250407536718!3d41.320795000124235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b1e79fe7e4d%3A0x4dca996e6bb6dcb!2sMetro!5e0!3m2!1sen!2s!4v1728209358433!5m2!1sen!2s" style={{ border: 0 }} className="h-full w-full rounded-xl grayscale" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.4514775666526!2d69.22250407536718!3d41.320795000124235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b1e79fe7e4d%3A0x4dca996e6bb6dcb!2sMetro!5e0!3m2!1sen!2s!4v1728209358433!5m2!1sen!2s" style={{ border: 0 }} className="h-full w-full rounded-xl grayscale" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         <div className="absolute top-0 right-0 hidden sm:flex flex-col p-10">
