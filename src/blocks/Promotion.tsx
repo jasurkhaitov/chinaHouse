@@ -29,7 +29,7 @@ export const Promotion = () => {
 
   return (
     <div id="discount" className="mt-12 px-4 w-[98%] m-auto xl:w-[1200px]">
-      <p className="text-4xl font-bold text-black text-center md:text-left">АКЦИИ</p>
+      <p className="px-[15px] w-full m-auto xl:w-[1080px] text-4xl font-bold text-black text-center md:text-left">АКЦИИ</p>
       <div className="grid gap-4 py-6 grid-cols-1
        md:grid-cols-2">
         {promotionsData.map((promo, index) => (

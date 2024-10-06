@@ -45,7 +45,7 @@ export const ModalForm = ({}) => {
       </div>
       <ButtonWithIcon
         title="Отправить заявку"
-        className="mt-6 flex h-12 w-full items-center gap-x-6 rounded-lg border border-purple pl-5 text-lg font-bold text-purple"
+        className="mt-6 flex h-12 w-full justify-center items-center gap-x-6 rounded-lg border border-purple text-lg font-bold text-purple"
         icon={<Next color="#FF5F65" />}
       />
     </Modal>

@@ -10,23 +10,24 @@ export const FormRequest = () => {
           Оставьте заявку и мы свяжемся c вами в ближайшее время
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row flex-wrap items-start w-full lg:items-end gap-4 py-4">
-        <label className="grid w-full gap-1 text-white">
+
+      <div className="flex flex-wrap items-start lg:items-end gap-4 py-4">
+        <label className="grid w-full sm:max-w-xs gap-1 text-white">
           <span>Имя</span>
           <input
             className="rounded-md w-full bg-neutral-700 p-4"
             placeholder="Андрей"
           />
         </label>
-        <label className="grid w-full gap-1 text-white">
+        <label className="grid w-full sm:max-w-xs gap-1 text-white">
           <span>Номер телефона</span>
           <input className="rounded-md bg-neutral-700 p-4" placeholder="+998" />
         </label>
 
-        <div className="flex sm:w-auto w-full justify-center md:justify-start">
+        <div className="flex sm:max-w-xs w-full justify-center md:justify-start">
           <ButtonWithIcon
             title="Посмотреть планировки"
-            className="flex justify-center sm:w-auto w-full items-center mt-2 lg:mt-0 gap-x-2 rounded-lg bg-purple p-3 text-md sm:text-xl font-bold text-white"
+            className="flex justify-center sm:max-w-xs w-full items-center mt-2 lg:mt-0 gap-x-2 rounded-lg bg-purple p-3 text-md sm:text-xl font-bold text-white"
             icon={<Next />}
           />
         </div>

@@ -13,7 +13,7 @@ export const About = () => {
 
   return (
     <div id="about" className="mt-12 z-10">
-      <p className="text-zinc-800F text-4xl pl-5 font-bold text-center md:text-left">О КОМПАНИИ</p>
+      <p className="text-zinc-800F text-4xl px-[15px] w-full m-auto xl:w-[1080px] font-bold text-center md:text-left">О КОМПАНИИ</p>
 
       <div className="flex flex-col lg:flex-row gap-5 small:gap-10 items-start lg:items-center">
         <div data-aos='fade-right' className="w-[80%] lg:w-1/2 relative">
