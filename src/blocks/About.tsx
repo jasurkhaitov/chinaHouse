@@ -3,6 +3,8 @@ import { images } from "../assets/images";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
+import Blur from '../assets/images/blur.png'
+
 export const About = () => {
 
   useEffect(() => {
@@ -13,9 +15,11 @@ export const About = () => {
     <div id="about" className="mt-12 z-10">
       <p className="text-zinc-800F text-4xl pl-5 font-bold text-center md:text-left">О КОМПАНИИ</p>
 
-      <div className="flex flex-col lg:flex-row gap-10 items-start lg:items-center">
-        <div data-aos='fade-right' className="w-[80%] lg:w-1/2">
+      <div className="flex flex-col lg:flex-row gap-5 small:gap-10 items-start lg:items-center">
+        <div data-aos='fade-right' className="w-[80%] lg:w-1/2 relative">
           <img className="w-full mt-0" src={images.aboutBlock} alt="About Block" />
+
+          <img src={Blur} className=" absolute -bottom-10 small:-bottom-20 left-0" alt=""/>
         </div>
 
         <div data-aos='fade-left' className="mt-8 lg:mt-0 w-full lg:w-1/2 px-[20px] lg:px-0">

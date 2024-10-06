@@ -136,28 +136,28 @@ export const Header = () => {
               key={idx} 
               className="text-lg font-medium" 
               href={item.link} 
-              onClick={(e) => smoothScroll(e, item.link)} // Use the smooth scroll function here
+              onClick={(e) => smoothScroll(e, item.link)}
             >
               {item.page}
             </a>
           ))}
 
-          <div className="mt-6 flex items-center gap-x-3 cursor-pointer">
+          <div className="pt-5 flex items-center gap-x-3 cursor-pointer border-t border-gray-500">
             <div className="flex h-9 w-9 items-center justify-center rounded-md bg-red-400/60">
               <PhoneCall />
             </div>
             <p className="text-lg">+998 71 200 05 45</p>
           </div>
 
-          <div className="mt-6 flex flex-col gap-y-4">
-            <select className="w-full p-2 bg-gray-100 border rounded-md focus:outline-none">
+          <div className="flex flex-col gap-y-4 w-full">
+            <select className="w-[90%] p-2 bg-gray-100 border rounded-md focus:outline-none">
               <option value="">RU</option>
               <option value="">UZ</option>
               <option value="">EN</option>
             </select>
 
             <Button
-              className="rounded-[5px] flex small:hidden bg-[#FF5F65] active:scale-95 px-[15px] py-[8px] text-[15px] text-white"
+              className="rounded-[5px] w-[90%] text-center flex small:hidden bg-[#FF5F65] active:scale-95 px-[15px] py-[8px] text-[15px] text-white"
               title="Заказать звонок"
               onClick={() => setIsOpen(true)}
             />

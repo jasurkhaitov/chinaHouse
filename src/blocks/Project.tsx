@@ -79,7 +79,7 @@ export const Project = () => {
               </p>
               <ButtonWithIcon
                 title="Посмотреть планировки"
-                className="flex items-center gap-x-2 rounded-lg bg-purple px-4 py-4 text-lg font-bold text-white"
+                className="flex items-center gap-x-2 rounded-lg bg-purple px-4 py-4 text-sm sm:text-lg font-bold text-white"
                 icon={<Next />}
               />
             </div>
